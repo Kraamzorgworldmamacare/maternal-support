@@ -9,23 +9,19 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #fffaf5;
-    color: #333;
+    color: white;
 }
 
+/* HEADER */
 header {
     background-color: #d9b38c;
-    padding: 30px 20px;
+    padding: 25px 20px;
     text-align: center;
 }
 
 header img {
-    width: 150px;
-    margin-bottom: 15px;
-}
-
-nav {
-    margin-top: 15px;
+    width: 130px;
+    margin-bottom: 10px;
 }
 
 nav a {
@@ -33,35 +29,41 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-.hero {
+/* GENERAL SECTION WITH IMAGE */
+.image-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
     text-align: center;
-    padding: 70px 20px;
-    background-color: #f4e6d4;
 }
 
-.hero h2 {
-    font-size: 28px;
-    color: #b88b5a;
+.overlay {
+    background: rgba(0,0,0,0.55);
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 10px;
 }
 
-.hero p {
+.image-section h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.image-section p {
     font-size: 18px;
-    margin-top: 15px;
+    line-height: 1.7;
 }
 
 button {
     background-color: #b88b5a;
     color: white;
-    padding: 12px 25px;
+    padding: 14px 28px;
     border: none;
-    margin-top: 20px;
+    margin-top: 25px;
     cursor: pointer;
     font-size: 16px;
 }
@@ -70,31 +72,12 @@ button:hover {
     background-color: #a67845;
 }
 
-.section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.section h2 {
-    color: #b88b5a;
-    margin-bottom: 20px;
-}
-
-.section p {
-    line-height: 1.7;
-}
-
-ul {
-    line-height: 2;
-}
-
+/* FOOTER */
 .footer {
     background-color: #d9b38c;
     text-align: center;
-    padding: 30px;
+    padding: 25px;
     color: white;
-    margin-top: 40px;
 }
 </style>
 </head>
@@ -102,8 +85,7 @@ ul {
 <body>
 
 <header>
-    <img src="Logo.JPG" alt="Kraamzorg World Mamá Care">
-
+    <img src="Logo.JPG" alt="Logo">
     <h1>Kraamzorg World Mamá Care</h1>
 
     <nav>
@@ -113,56 +95,59 @@ ul {
     </nav>
 </header>
 
-<div class="hero">
-    <h2>Zorg met liefde en aandacht</h2>
-    <p>Professionele kraamzorg in Den Haag en omgeving</p>
-    <a href="contacto.html">
-        <button>Neem contact op</button>
-    </a>
+<!-- SLOGAN SECTION -->
+<div class="image-section" style="background-image: url('slogan.jpg');">
+    <div class="overlay">
+        <h2>Jij ontspannen. Wij zorgen voor de rest.</h2>
+        <p>
+        Laat ons jou begeleiden tijdens deze bijzondere periode.
+        Met liefdevolle en professionele ondersteuning maken wij
+        van jouw kraamtijd een warme en onvergetelijke ervaring.
+        </p>
+
+        <a href="contacto.html">
+            <button>Neem contact op</button>
+        </a>
+    </div>
 </div>
 
-<div class="section">
-    <h2>Over ons</h2>
-    <p>
-    Kraamzorg World Mamá Care biedt warme, deskundige en betrouwbare zorg
-    aan moeder en baby tijdens de eerste dagen na de bevalling.
-    </p>
+<!-- WHAT IS KRAAMZORG -->
+<div class="image-section" style="background-image: url('baby.jpg');">
+    <div class="overlay">
+        <h2>Wat is kraamzorg?</h2>
+        <p>
+        Kraamzorg is professionele zorg en begeleiding in de eerste dagen na de bevalling.
+        Wij ondersteunen bij de verzorging van de baby, controleren de gezondheid
+        van moeder en kind en helpen bij borstvoeding of flesvoeding.
+        </p>
 
-    <p>
-    Wij controleren dagelijks de gezondheid van moeder en baby,
-    ondersteunen bij borstvoeding of flesvoeding
-    en geven praktische uitleg over verzorging en hygiëne.
-    </p>
-
-    <p>
-    Met rust, aandacht en professionaliteit begeleiden wij gezinnen,
-    zodat zij met vertrouwen kunnen genieten van hun kraamtijd.
-    </p>
+        <p>
+        Ons doel is rust, vertrouwen en een stabiele start voor het hele gezin.
+        </p>
+    </div>
 </div>
 
-<div class="section">
-    <h2>Waarom kiezen voor ons?</h2>
+<!-- BIJ JOU IN DE BUURT -->
+<div class="image-section" style="background-image: url('zwanger.jpg');">
+    <div class="overlay">
+        <h2>Persoonlijke kraamzorg bij jou in de buurt</h2>
+        <p>
+        Wij bieden liefdevolle kraamzorg in:
+        </p>
 
-    <ul>
-        <li>✔ Persoonlijke en warme begeleiding</li>
-        <li>✔ Professionele kraamzorg op maat</li>
-        <li>✔ Ondersteuning bij borstvoeding</li>
-        <li>✔ Rust en structuur in het gezin</li>
-        <li>✔ Betrouwbaar en flexibel</li>
-    </ul>
-</div>
+        <p>
+        <strong>Den Haag • Delft • Rijswijk • Rotterdam • Wassenaar</strong>
+        </p>
 
-<div class="section">
-    <h2>Werkgebied</h2>
-    <p>
-    Den Haag en omgeving (Zuid-Holland).
-    Neem gerust contact op om beschikbaarheid te bespreken.
-    </p>
+        <p>
+        Twijfel je of jouw woonplaats binnen ons werkgebied valt?
+        Neem gerust contact met ons op.
+        </p>
+    </div>
 </div>
 
 <div class="footer">
     <p>KVK-nummer: 99962055</p>
-    <p>© 2026 Kraamzorg World Mamá Care</p>
 </div>
 
 </body>
