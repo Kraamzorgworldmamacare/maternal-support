@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Kraamzorg World Mamá Care</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fffaf5;
+        }
+
+        .menu {
+            background-color: #d9b38c;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #d9b38c;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #f4e6d4;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="servicios.html">Diensten</a>
+        <a href="contacto.html">Contact</a>
+    </div>
+
+    <div class="container">
+        <h1>Contact</h1>
+        <p>Neem gerust contact op met Yakaira De Los Santos.</p>
+
+        <form>
+            <label>Voornaam:</label>
+            <input type="text">
+
+            <label>Achternaam:</label>
+            <input type="text">
+
+            <label>Telefoonnummer:</label>
+            <input type="text">
+
+            <label>E-mail:</label>
+            <input type="email">
+
+            <label>Bericht:</label>
+            <textarea rows="5"></textarea>
+
+            <button type="submit">Versturen</button>
+        </form>
+
+        <h3>Direct contact:</h3>
+        <p>Email: kraamzorgworldmamacare@gmail.com</p>
+        <p><a href="https://wa.me/31600000000">WhatsApp</a></p>
+        <p><a href="https://instagram.com/kraamzorgworldmamacare">Instagram</a></p>
+    </div>
+
+    <div class="footer">
+        <p>KVK-nummer: 99962055</p>
+        <p>Den Haag, Zuid-Holland</p>
+    </div>
+
+</body>
+</html>
