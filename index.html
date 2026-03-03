@@ -9,10 +9,10 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    color: white;
+    background-color: #fffaf5;
+    color: #333;
 }
 
-/* HEADER */
 header {
     background-color: #d9b38c;
     padding: 25px 20px;
@@ -20,8 +20,12 @@ header {
 }
 
 header img {
-    width: 130px;
+    width: 140px;
     margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 15px;
 }
 
 nav a {
@@ -31,37 +35,39 @@ nav a {
     font-weight: bold;
 }
 
-/* GENERAL SECTION WITH IMAGE */
-.image-section {
-    position: relative;
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1609220136736-443140cffec6');
     background-size: cover;
     background-position: center;
-    padding: 120px 20px;
+    padding: 130px 20px;
     text-align: center;
+    color: white;
 }
 
 .overlay {
-    background: rgba(0,0,0,0.55);
+    background: rgba(0,0,0,0.45);
     padding: 50px 20px;
-    max-width: 900px;
-    margin: auto;
-    border-radius: 10px;
 }
 
-.image-section h2 {
+.hero h2 {
     font-size: 38px;
     margin-bottom: 20px;
 }
 
-.image-section p {
-    font-size: 18px;
-    line-height: 1.7;
+.hero p {
+    font-size: 20px;
+    max-width: 750px;
+    margin: auto;
 }
 
 button {
     background-color: #b88b5a;
     color: white;
-    padding: 14px 28px;
+    padding: 14px 30px;
     border: none;
     margin-top: 25px;
     cursor: pointer;
@@ -72,12 +78,58 @@ button:hover {
     background-color: #a67845;
 }
 
-/* FOOTER */
+.section {
+    padding: 70px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center; /* Gecentreerd zoals in de foto */
+}
+
+.section h2 {
+    color: #b88b5a;
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.highlight {
+    background-color: #f4e6d4;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.locations {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.locations h3 {
+    color: #b88b5a;
+}
+
 .footer {
     background-color: #d9b38c;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
     color: white;
+    margin-top: 40px;
 }
 </style>
 </head>
@@ -85,7 +137,7 @@ button:hover {
 <body>
 
 <header>
-    <img src="Logo.JPG" alt="Logo">
+    <img src="Logo.jpg" alt="Kraamzorg World Mamá Care">
     <h1>Kraamzorg World Mamá Care</h1>
 
     <nav>
@@ -95,14 +147,13 @@ button:hover {
     </nav>
 </header>
 
-<!-- SLOGAN SECTION -->
-<div class="image-section" style="background-image: url('slogan.jpg');">
+<div class="hero">
     <div class="overlay">
         <h2>Jij ontspannen. Wij zorgen voor de rest.</h2>
         <p>
-        Laat ons jou begeleiden tijdens deze bijzondere periode.
-        Met liefdevolle en professionele ondersteuning maken wij
-        van jouw kraamtijd een warme en onvergetelijke ervaring.
+        Geniet van een rustige en liefdevolle kraamtijd.
+        Wij begeleiden jou en je baby met zorg, aandacht en professionaliteit,
+        zodat deze bijzondere periode onvergetelijk wordt.
         </p>
 
         <a href="contacto.html">
@@ -111,43 +162,62 @@ button:hover {
     </div>
 </div>
 
-<!-- WHAT IS KRAAMZORG -->
-<div class="image-section" style="background-image: url('baby.jpg');">
-    <div class="overlay">
-        <h2>Wat is kraamzorg?</h2>
-        <p>
-        Kraamzorg is professionele zorg en begeleiding in de eerste dagen na de bevalling.
-        Wij ondersteunen bij de verzorging van de baby, controleren de gezondheid
-        van moeder en kind en helpen bij borstvoeding of flesvoeding.
-        </p>
-
-        <p>
-        Ons doel is rust, vertrouwen en een stabiele start voor het hele gezin.
-        </p>
-    </div>
+<div class="section">
+    <h1>Kraamzorg World Mamá Care</h1>
+    <h3>Yakaira De Los Santos</h3>
+    <p><strong>Gediplomeerde kraamverzorgster in Den Haag</strong></p>
+    
+    <h2>Over mij</h2>
+    <p>
+    Mijn naam is Yakaira De Los Santos. Ik bied deskundige, warme en betrouwbare zorg aan moeder en baby tijdens de eerste dagen na de bevalling. Met rust, aandacht en professionaliteit begeleid ik gezinnen in een bijzondere periode.
+    </p>
+    <img src="familie-foto.jpg" alt="Yakaira De Los Santos met kinderen" class="about-img">
 </div>
 
-<!-- BIJ JOU IN DE BUURT -->
-<div class="image-section" style="background-image: url('zwanger.jpg');">
-    <div class="overlay">
-        <h2>Persoonlijke kraamzorg bij jou in de buurt</h2>
-        <p>
-        Wij bieden liefdevolle kraamzorg in:
-        </p>
+<div class="section">
+    <h2>Wat is kraamzorg?</h2>
+    <p>
+    Kraamzorg is professionele ondersteuning tijdens de eerste dagen na de bevalling.
+    In deze bijzondere periode helpen wij bij het herstel van de moeder
+    en de verzorging van de baby.
+    </p>
+    <p>
+    Wij controleren de gezondheid, ondersteunen bij borstvoeding of flesvoeding,
+    geven praktische uitleg en zorgen voor rust en structuur in huis.
+    </p>
+</div>
 
-        <p>
-        <strong>Den Haag • Delft • Rijswijk • Rotterdam • Wassenaar</strong>
-        </p>
+<div class="section highlight">
+    <h2>Persoonlijke kraamzorg bij jou in de buurt</h2>
+    <p>
+    Wij bieden liefdevolle kraamzorg in jouw regio.
+    Twijfel je of jouw woonplaats binnen ons werkgebied valt?
+    Neem gerust contact met ons op. Wij denken graag met je mee.
+    </p>
+</div>
 
-        <p>
-        Twijfel je of jouw woonplaats binnen ons werkgebied valt?
-        Neem gerust contact met ons op.
-        </p>
-    </div>
+<div class="locations">
+    <h3>Actief in:</h3>
+    <p>
+    Den Haag • Delft • Rijswijk • Rotterdam • Wassenaar
+    </p>
+</div>
+
+<div class="section">
+    <h2>Onze belofte</h2>
+    <p>
+    Jij mag genieten van dit bijzondere moment met je baby.
+    Wij zorgen voor begeleiding, structuur en professionele ondersteuning,
+    zodat jij met vertrouwen en rust kunt herstellen.
+    </p>
+    <p>
+    Samen maken we van de kraamtijd een warme en onvergetelijke start.
+    </p>
 </div>
 
 <div class="footer">
     <p>KVK-nummer: 99962055</p>
+    <p>Den Haag en omgeving</p>
 </div>
 
 </body>
