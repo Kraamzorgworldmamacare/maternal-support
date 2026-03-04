@@ -1,216 +1,226 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kraamzorg World Mamá Care</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            background-color: #fffaf5;
-            color: #333;
-            line-height: 1.6;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kraamzorg World Mamá Care</title>
 
-        /* Header */
-        header {
-            background-color: #d9b38c;
-            padding: 15px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #fffaf5;
+    color: #333;
+    line-height: 1.6;
+}
 
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1100px;
-            margin: auto;
-        }
+/* HEADER */
+header {
+    background-color: #d9b38c;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-        .header-logo img {
-            height: 60px;
-        }
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
 
-        nav {
-            display: flex;
-            gap: 20px;
-        }
+.header-logo img {
+    height: 60px;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            padding: 8px 12px;
-        }
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
 
-        /* Secciones con imagen de fondo */
-        .bg-section {
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: white;
-            text-align: center;
-            padding: 100px 20px; /* Más espacio arriba y abajo */
-        }
+/* SECCIONES CON IMAGEN */
+.bg-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    margin: 20px 0;          /* espacio entre secciones */
+    border-radius: 15px;     /* bordes suaves */
+    overflow: hidden;
+}
 
-        .overlay {
-            background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen */
-            padding: 50px 20px;
-            max-width: 800px;
-            margin: auto;
-        }
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 100px 20px;
+    border-radius: 15px;
+}
 
-        .section-white {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: auto;
-            text-align: center;
-        }
+/* SECCION BLANCA */
+.section-white {
+    padding: 70px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
 
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
+/* OVER MIJ */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
 
-        p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: auto;
-        }
+.about-text {
+    flex: 1;
+}
 
-        button {
-            background-color: #b88b5a;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 20px;
-        }
+.about-logo {
+    flex: 1;
+    text-align: center;
+}
 
-        .about-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
+.about-logo img {
+    max-width: 250px;
+}
 
-        .about-text {
-            flex: 1;
-            text-align: left;
-            max-width: 500px;
-        }
+/* BOTONES */
+button {
+    background-color: #b88b5a;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
 
-        .about-logo {
-            flex: 1;
-            text-align: center;
-        }
+button:hover {
+    background-color: #a67848;
+}
 
-        .about-logo img {
-            max-width: 220px;
-        }
+/* FOOTER */
+.footer {
+    background-color: #d9b38c;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    margin-top: 40px;
+}
 
-        /* Ajuste para que el texto del bebé y el de kraamzorg se compacten */
-        .overlay p {
-            font-size: 1rem;
-            line-height: 1.6;
-        }
+h2 { font-size: 2.2rem; margin-bottom: 20px; }
+p { font-size: 1.1rem; max-width: 800px; margin: auto; }
 
-        .footer {
-            background-color: #d9b38c;
-            text-align: center;
-            padding: 30px;
-            color: white;
-        }
-
-        /* Responsividad */
-        @media (max-width: 768px) {
-            .about-container {
-                flex-direction: column;
-            }
-            nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-            .header-container {
-                flex-direction: column;
-            }
-        }
-    </style>
+</style>
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <div class="header-logo">
-                <img src="Logo.JPG" alt="Logo">
-            </div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="servicios.html">Diensten</a>
-                <a href="contacto.html">Contact</a>
-            </nav>
-        </div>
-    </header>
+<header>
+<div class="header-container">
+    <div class="header-logo">
+        <img src="Logo.JPG" alt="Logo">
+    </div>
 
-    <section class="bg-section" style="background-image: url('slogan.png');">
-        <div class="overlay">
-            <h2>Jij ontspannen.</h2>
-            <h2>Wij zorgen voor de rest.</h2>
-            <p>Geniet van een rustige en liefdevolle kraamtijd. Wij begeleiden jou en je baby met zorg, aandacht en professionaliteit, zodat deze bijzondere periode onvergetelijk wordt.</p>
-            <a href="contacto.html"><button>Neem contact op</button></a>
-        </div>
-    </section>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="servicios.html">Diensten</a>
+        <a href="contacto.html">Contact</a>
+    </nav>
+</div>
+</header>
 
-    <section class="section-white">
-        <h1 style="color: #b88b5a;">Kraamzorg World Mamá Care</h1>
-        <h3>Yakaira De Los Santos</h3>
-        <p><strong>Gediplomeerde kraamverzorgster in Den Haag</strong></p>
-        <br>
-        <div class="about-container">
-            <div class="about-text">
-                <h2>Over mij</h2>
-                <p>Mijn naam is Yakaira De Los Santos. Ik bied deskundige, warme en betrouwbare zorg aan moeder en baby tijdens de eerste dagen na de bevalling. Met rust, aandacht en professionaliteit begeleid ik gezinnen in een bijzondere periode.</p>
-            </div>
-            <div class="about-logo">
-                <img src="Logo.JPG" alt="Logo">
-            </div>
-        </div>
-    </section>
+<!-- SLOGAN -->
+<section class="bg-section" style="background-image: url('slogan.png');">
+<div class="overlay">
+<h2>Jij ontspannen. Wij zorgen voor de rest.</h2>
+<p>
+Geniet van een rustige en liefdevolle kraamtijd.
+Wij begeleiden jou en je baby met zorg, aandacht en professionaliteit,
+zodat deze bijzondere periode onvergetelijk wordt.
+</p>
+<a href="contacto.html"><button>Neem contact op</button></a>
+</div>
+</section>
 
-    <section class="bg-section" style="background-image: url('baby.png');">
-        <div class="overlay">
-            <h2>Wat is kraamzorg?</h2>
-            <p>Kraamzorg is professionele ondersteuning tijdens de eerste dagen na de bevalling. In deze bijzondere periode helpen wij bij het herstel van de moeder en de verzorging van de baby.</p>
-            <p>Wij controleren de gezondheid, ondersteunen bij borstvoeding of flesvoeding, geven praktische uitleg en zorgen voor rust en structuur in huis.</p>
-        </div>
-    </section>
+<!-- OVER MIJ -->
+<section class="section-white">
 
-    <section class="bg-section" style="background-image: url('zwanger.png');">
-        <div class="overlay">
-            <h2>Persoonlijke kraamzorg bij jou in de buurt</h2>
-            <p>Wij bieden liefdevolle kraamzorg in jouw regio. Twijfel je of jouw woonplaats binnen ons werkgebied valt? Neem gerust contact met ons op. Wij denken graag met je mee.</p>
-        </div>
-    </section>
+<h1 style="color: #b88b5a;">Kraamzorg World Mamá Care</h1>
+<h3>Yakaira De Los Santos</h3>
+<p><strong>Gediplomeerde kraamverzorgster in Den Haag</strong></p>
 
-    <section class="section-white">
-        <h3 style="color: #b88b5a;">Actief in:</h3>
-        <p>Den Haag • Delft • Rijswijk • Rotterdam • Wassenaar</p>
-        <div style="margin-top: 40px;">
-            <h2>Onze belofte</h2>
-            <p>Jij mag genieten van dit bijzondere moment met je baby. Wij zorgen voor begeleiding, structuur en professionele ondersteuning, zodat jij met vertrouwen en rust kunt herstellen.</p>
-        </div>
-    </section>
+<br>
 
-    <footer class="footer">
-        <p>KVK-nummer: 99962055 | Den Haag en omgeving</p>
-    </footer>
+<div class="about-container">
+
+<div class="about-text">
+<h2>Over mij</h2>
+<p>
+Mijn naam is Yakaira De Los Santos. Ik bied deskundige, warme en betrouwbare zorg
+aan moeder en baby tijdens de eerste dagen na de bevalling.
+Met rust, aandacht en professionaliteit begeleid ik gezinnen
+in een bijzondere periode.
+</p>
+</div>
+
+<div class="about-logo">
+<img src="Logo.JPG" alt="Logo">
+</div>
+
+</div>
+
+</section>
+
+<!-- WAT IS KRAAMZORG -->
+<section class="bg-section" style="background-image: url('baby.png');">
+<div class="overlay">
+<h2>Wat is kraamzorg?</h2>
+<p>
+Kraamzorg is professionele ondersteuning tijdens de eerste dagen na de bevalling.
+Wij helpen bij het herstel van de moeder en de verzorging van de baby.
+</p>
+<p>
+Wij controleren de gezondheid, ondersteunen bij borstvoeding of flesvoeding,
+geven praktische uitleg en zorgen voor rust en structuur in huis.
+</p>
+</div>
+</section>
+
+<!-- BIJ JOU IN DE BUURT -->
+<section class="bg-section" style="background-image: url('zwanger.png');">
+<div class="overlay">
+<h2>Persoonlijke kraamzorg bij jou in de buurt</h2>
+<p>
+Wij bieden liefdevolle kraamzorg in:
+</p>
+<p><strong>Den Haag • Delft • Rijswijk • Rotterdam • Wassenaar</strong></p>
+<p>
+Twijfel je of jouw woonplaats binnen ons werkgebied valt?
+Neem gerust contact met ons op.
+</p>
+</div>
+</section>
+
+<!-- BELOFTE -->
+<section class="section-white">
+<h2>Onze belofte</h2>
+<p>
+Jij mag genieten van dit bijzondere moment met je baby.
+Wij zorgen voor begeleiding, structuur en professionele ondersteuning,
+zodat jij met vertrouwen en rust kunt herstellen.
+</p>
+</section>
+
+<footer class="footer">
+<p>KVK-nummer: 99962055 | Den Haag en omgeving</p>
+</footer>
 
 </body>
 </html>
